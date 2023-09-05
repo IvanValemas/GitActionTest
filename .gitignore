@@ -1,0 +1,7 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/Microservices/.vs/Microservices
+/Microservices/MicroserviceA/obj
+/Microservices/MicroServicioB/obj
