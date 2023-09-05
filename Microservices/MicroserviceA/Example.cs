@@ -1,6 +1,6 @@
 ﻿namespace MicroserviceA
 {
-    public class Class1
+    public class Example
     {
 
     }
