@@ -9,7 +9,7 @@ on:
     paths: 
             - "Microservices/MicroB/**"
             - "Microservices/Trasversales/**"
-            - ".github/workflows/MicroServiceA.yml"
+            - ".github/workflows/MicroServiceB.yml"
 
 jobs:
   build:
