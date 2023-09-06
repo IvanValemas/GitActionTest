@@ -7,7 +7,8 @@ on:
  pull_request:
     branches: [ "main"]
     paths: 
-            - "Microservices/MicroserviceA/**"
+            - "Microservices/MicroA/**"
+            - "Microservices/Trasversales/**"
             - ".github/workflows/MicroServiceA.yml"
 
 jobs:
