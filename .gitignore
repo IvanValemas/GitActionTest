@@ -5,3 +5,10 @@
 /Microservices/.vs/Microservices
 /Microservices/MicroserviceA/obj
 /Microservices/MicroServicioB/obj
+/Microservices/MicroserviceA/bin/Debug/net6.0
+/Microservices/MicroServicioB/bin/Debug/net6.0
+/Microservices/MicroA/Api/WebApi/obj
+/Microservices/MicroA/Core/Domain/obj
+/Microservices/MicroB/Api/WebApi/obj
+/Microservices/MicroB/Core/Domain/obj
+/Microservices/Trasversales/Trasnversal.Domain/obj
