@@ -32,4 +32,4 @@ jobs:
     - name: Build Trasversales.Domain
       run: dotnet build  Microservices/Trasversales/Domain/Trasnversal.Domain.csproj      
     - name: Test MicroA
-      run: dotnet build Microservices/MicroA/Test/MicroA.Test.csproj --no-build --verbosity normal
+      run: dotnet build Microservices/MicroA/Test/MicroA.Test.csproj
