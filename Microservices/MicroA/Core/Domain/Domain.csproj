@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Trasversales\Trasnversal.Domain\Domain.csproj" />
+    <ProjectReference Include="..\..\..\Trasversales\Domain\Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
-﻿using Trasnversal.Domain;
+﻿
+using Trasnversal.Domain;
 
 namespace Domain
 {

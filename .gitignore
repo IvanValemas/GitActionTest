@@ -19,3 +19,7 @@
 /Microservices/MicroA/Test/obj
 /Microservices/MicroB/Test/obj
 /Microservices/Trasversales/Domain/obj
+/Microservices/MicroB/Test/bin/Debug/net6.0
+/Microservices/Trasversales/Domain/bin/Debug/net6.0
+/Microservices/MicroA/Core/Domain/bin/Debug/net6.0
+/Microservices/MicroB/Core/Domain/bin/Debug/net6.0
