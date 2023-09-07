@@ -7,17 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroA", "MicroA", "{202FC0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroB", "MicroB", "{AB834BBF-473F-446B-BEE7-2DA9516CAF73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "MicroA\Core\Domain\Domain.csproj", "{7F65EF3D-94DD-4E6D-8077-3E4FFA0DC1F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroA.Domain", "MicroA\Core\Domain\MicroA.Domain.csproj", "{7F65EF3D-94DD-4E6D-8077-3E4FFA0DC1F7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "MicroA\Api\WebApi\WebApi.csproj", "{D5BA324C-6B61-4CD7-9B69-8A1CEE10BB63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroA.WebApi", "MicroA\Api\WebApi\MicroA.WebApi.csproj", "{D5BA324C-6B61-4CD7-9B69-8A1CEE10BB63}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "MicroB\Core\Domain\Domain.csproj", "{FF141ABF-32C0-49D0-8363-F1E18EBAF827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroB.Domain", "MicroB\Core\Domain\MicroB.Domain.csproj", "{FF141ABF-32C0-49D0-8363-F1E18EBAF827}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "MicroB\Api\WebApi\WebApi.csproj", "{C7295DA0-C1D7-4DF0-B871-8B6FD97CBBDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroB.WebApi", "MicroB\Api\WebApi\MicroB.WebApi.csproj", "{C7295DA0-C1D7-4DF0-B871-8B6FD97CBBDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "MicroB\Test\Test.csproj", "{FB7D3045-98E2-4648-ADB8-8DDE7634582D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroB.Test", "MicroB\Test\MicroB.Test.csproj", "{FB7D3045-98E2-4648-ADB8-8DDE7634582D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Trasversales\Domain\Domain.csproj", "{78A9FE69-8471-44E9-A149-AF8681AD67A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trasnversal.Domain", "Trasversales\Domain\Trasnversal.Domain.csproj", "{78A9FE69-8471-44E9-A149-AF8681AD67A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroA.Test", "MicroA\MicroA.Test\MicroA.Test.csproj", "{61DC9B88-5FA6-49CA-9F6A-FB68D8BB2049}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{78A9FE69-8471-44E9-A149-AF8681AD67A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78A9FE69-8471-44E9-A149-AF8681AD67A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78A9FE69-8471-44E9-A149-AF8681AD67A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DC9B88-5FA6-49CA-9F6A-FB68D8BB2049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DC9B88-5FA6-49CA-9F6A-FB68D8BB2049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DC9B88-5FA6-49CA-9F6A-FB68D8BB2049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DC9B88-5FA6-49CA-9F6A-FB68D8BB2049}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{FF141ABF-32C0-49D0-8363-F1E18EBAF827} = {AB834BBF-473F-446B-BEE7-2DA9516CAF73}
 		{C7295DA0-C1D7-4DF0-B871-8B6FD97CBBDE} = {AB834BBF-473F-446B-BEE7-2DA9516CAF73}
 		{FB7D3045-98E2-4648-ADB8-8DDE7634582D} = {AB834BBF-473F-446B-BEE7-2DA9516CAF73}
+		{61DC9B88-5FA6-49CA-9F6A-FB68D8BB2049} = {202FC038-9079-43DA-ADAF-353630435291}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7DF2DBD-EBC2-4ECB-A863-463A2FDF4B94}

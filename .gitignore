@@ -23,3 +23,7 @@
 /Microservices/Trasversales/Domain/bin/Debug/net6.0
 /Microservices/MicroA/Core/Domain/bin/Debug/net6.0
 /Microservices/MicroB/Core/Domain/bin/Debug/net6.0
+/Microservices/MicroA/Api/WebApi/bin/Debug/net6.0
+/Microservices/MicroA/MicroA.Test/bin/Debug/net6.0
+/Microservices/MicroA/MicroA.Test/obj
+/Microservices/MicroB/Api/WebApi/bin/Debug/net6.0
