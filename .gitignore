@@ -15,3 +15,6 @@
 /Microservices/Example/obj
 /Microservices/MicroA/Test/Test/obj
 /Microservices/MicroA/Test/Test/bin/Debug/net6.0
+/Microservices/MicroA/Test/bin/Debug/net6.0
+/Microservices/MicroA/Test/obj
+/Microservices/MicroB/Test/obj
