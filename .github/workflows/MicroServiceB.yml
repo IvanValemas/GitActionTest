@@ -20,16 +20,16 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies WebApi
-      run: dotnet restore Microservices/MicroB/Api/WebApi/WebApi.csproj
+      run: dotnet restore Microservices/MicroB/Api/WebApi/MicroB.WebApi.csproj
     - name: Restore dependencies Domain
-      run: dotnet restore Microservices/MicroB/Core/Domain/Domain.csproj
+      run: dotnet restore Microservices/MicroB/Core/Domain/MicroB.Domain.csproj
     - name: Restore dependencies Trasversales.Domain
-      run: dotnet restore  Microservices/Trasversales/Domain/Domain.csproj            
+      run: dotnet restore  Microservices/Trasversales/Domain/Trasnversal.Domain.csproj            
     - name: Build WebApi
-      run: dotnet build Microservices/MicroB/Api/WebApi/WebApi.csproj
+      run: dotnet build Microservices/MicroB/Api/WebApi/MicroB.WebApi.csproj
     - name: Build Domain
-      run: dotnet build Microservices/MicroB/Core/Domain/Domain.csproj
+      run: dotnet build Microservices/MicroB/Core/Domain/MicroB.Domain.csproj
     - name: Build Trasversales.Domain
-      run: dotnet build  Microservices/Trasversales/Domain/Domain.csproj      
+      run: dotnet build  Microservices/Trasversales/Domain/Trasnversal.Domain.csproj      
     - name: Test MicroB
-      run: dotnet build Microservices/MicroB/Test/Test.csproj --no-build --verbosity normal
+      run: dotnet build Microservices/MicroB/Test/MicroB.Test.csproj --no-build --verbosity normal
