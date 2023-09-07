@@ -12,3 +12,7 @@
 /Microservices/MicroB/Api/WebApi/obj
 /Microservices/MicroB/Core/Domain/obj
 /Microservices/Trasversales/Trasnversal.Domain/obj
+/Microservices/Example/obj
+/Microservices/MicroA/Test/Test/bin/Debug/net6.0
+/Microservices/MicroA/Test/Test/obj/Debug/net6.0
+/Microservices/MicroA/Test/Test/obj
