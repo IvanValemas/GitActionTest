@@ -24,12 +24,12 @@ jobs:
     - name: Restore dependencies Domain
       run: dotnet restore Microservices/MicroB/Core/Domain/Domain.csproj
     - name: Restore dependencies Trasversales.Domain
-      run: dotnet restore Microservices/Trasversales/Core/Trasnversal.Domain/Trasnversal.Domain.csproj      
+      run: dotnet restore  Microservices/Trasversales/Domain/Domain.csproj            
     - name: Build WebApi
       run: dotnet build Microservices/MicroB/Api/WebApi/WebApi.csproj
     - name: Build Domain
       run: dotnet build Microservices/MicroB/Core/Domain/Domain.csproj
     - name: Build Trasversales.Domain
-      run: dotnet build Microservices/Trasversales/Core/Trasnversal.Domain/Trasnversal.Domain.csproj 
+      run: dotnet build  Microservices/Trasversales/Domain/Domain.csproj      
     - name: Test MicroB
       run: dotnet build Microservices/MicroB/Test/Test.csproj --no-build --verbosity normal
