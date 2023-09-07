@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "MicroB\Core\Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "MicroB\Api\WebApi\WebApi.csproj", "{C7295DA0-C1D7-4DF0-B871-8B6FD97CBBDE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trasnversal.Domain", "Trasversales\Trasnversal.Domain\Trasnversal.Domain.csproj", "{0B04CC8B-03B8-4F29-870F-E682C683C821}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Trasversales\Trasnversal.Domain\Domain.csproj", "{0B04CC8B-03B8-4F29-870F-E682C683C821}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "MicroA\Test\Test\Test.csproj", "{012122FD-378C-4641-9C67-2471D9D75EE1}"
 EndProject
