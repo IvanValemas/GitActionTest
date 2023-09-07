@@ -28,6 +28,6 @@ jobs:
       #run: dotnet build Microservices\MicroB\Core\Domain\Domain.csproj
       #run: dotnet build Microservices\Trasversales\Core\Trasnversal.Domain\Trasnversal.Domain.csproj 
     - name: Test
-    - run: dotnet build Microservices\MicroB\Api\WebApi\WebApi.csproj --no-build --verbosity normal
+      run: dotnet build Microservices\MicroB\Api\WebApi\WebApi.csproj --no-build --verbosity normal
       #run: dotnet build Microservices\MicroB\Core\Domain\Domain.csproj --no-build --verbosity normal
       #run: dotnet build Microservices\Trasversales\Core\Trasnversal.Domain\Trasnversal.Domain.csproj --no-build --verbosity normal
