@@ -7,12 +7,11 @@ on:
   pull_request:
     branches: [ "main"]
     paths: 
-            - "Microservices/MicroB/**"
+            - "Microservices/MicroB/**"            
+            - "Microservices/Trasversales/**"
             - ".github/workflows/MicroServiceB.yml"
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -21,14 +20,14 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-    - run: dotnet restore Microservices\MicroB\Api\WebApi\WebApi.csproj
-    - run: dotnet restore Microservices\MicroB\Core\Domain\Domain.csproj
-    - run: dotnet restore Microservices\Trasversales\Core\Trasnversal.Domain\Trasnversal.Domain.csproj      
+      run: dotnet restore Microservices\MicroB\Api\WebApi\WebApi.csproj
+    #- run: dotnet restore Microservices\MicroB\Core\Domain\Domain.csproj
+    #- run: dotnet restore Microservices\Trasversales\Core\Trasnversal.Domain\Trasnversal.Domain.csproj      
     - name: Build
-    - run: dotnet build Microservices\MicroB\Api\WebApi\WebApi.csproj
-    - run: dotnet build Microservices\MicroB\Core\Domain\Domain.csproj
-    - run: dotnet build Microservices\Trasversales\Core\Trasnversal.Domain\Trasnversal.Domain.csproj 
+      run: dotnet build Microservices\MicroB\Api\WebApi\WebApi.csproj
+      #run: dotnet build Microservices\MicroB\Core\Domain\Domain.csproj
+      #run: dotnet build Microservices\Trasversales\Core\Trasnversal.Domain\Trasnversal.Domain.csproj 
     - name: Test
     - run: dotnet build Microservices\MicroB\Api\WebApi\WebApi.csproj --no-build --verbosity normal
-    - run: dotnet build Microservices\MicroB\Core\Domain\Domain.csproj --no-build --verbosity normal
-    - run: dotnet build Microservices\Trasversales\Core\Trasnversal.Domain\Trasnversal.Domain.csproj --no-build --verbosity normal
+      #run: dotnet build Microservices\MicroB\Core\Domain\Domain.csproj --no-build --verbosity normal
+      #run: dotnet build Microservices\Trasversales\Core\Trasnversal.Domain\Trasnversal.Domain.csproj --no-build --verbosity normal
