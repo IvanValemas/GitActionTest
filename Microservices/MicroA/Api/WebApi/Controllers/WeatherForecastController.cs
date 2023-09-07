@@ -1,5 +1,6 @@
 using Domain;
 using Microsoft.AspNetCore.Mvc;
+using Trasnversal.DomainT;
 
 namespace WebApi.Controllers
 {
@@ -26,7 +27,8 @@ namespace WebApi.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)],
+                Country = new Country() { CountryName = "Colombia MicroA" }
             })
             .ToArray();
         }

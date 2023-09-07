@@ -1,7 +1,7 @@
-﻿namespace Trasnversal.Domain
+﻿namespace Trasnversal.DomainT
 {
     public class Country
     {
-        public string Name { get; set; }
+        public string CountryName { get; set; }
     }
 }
