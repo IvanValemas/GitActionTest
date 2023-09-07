@@ -20,7 +20,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore **\Microservices\MicroB\Api\WebApi\WebApi.csproj
+      run: dotnet restore **\MicroB\Api\WebApi\WebApi.csproj
     #- run: dotnet restore Microservices\MicroB\Core\Domain\Domain.csproj
     #- run: dotnet restore Microservices\Trasversales\Core\Trasnversal.Domain\Trasnversal.Domain.csproj      
     - name: Build
