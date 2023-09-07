@@ -30,8 +30,6 @@ jobs:
     - name: Build Domain
       run: dotnet build Microservices/MicroA/Core/Domain/Domain.csproj
     - name: Build Trasversales.Domain
-      run: dotnet build Microservices/Trasversales/Core/Trasnversal.Domain/Trasnversal.Domain.csproj 
-    - name: Test Domain
-      run: dotnet build Microservices/MicroA/Core/Domain/Domain.csproj --no-build --verbosity normal
+      run: dotnet build Microservices/Trasversales/Core/Trasnversal.Domain/Trasnversal.Domain.csproj  
     - name: Test Trasversales.Domain
-      run: dotnet build Microservices/Trasversales/Core/Trasnversal.Domain/Trasnversal.Domain.csproj --no-build --verbosity normal
+      run: dotnet build Microservices/MicroA/Test/Test/Test.csproj --no-build --verbosity normal
