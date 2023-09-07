@@ -1,0 +1,37 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET
+
+on:
+ pull_request:
+    branches: [ "main"]
+    paths: 
+            - "Microservices/MicroB/**"
+            - "Microservices/Trasversales/**"
+            - ".github/workflows/MicroServiceA.yml"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies WebApi
+      run: dotnet restore Microservices/MicroB/Api/WebApi/WebApi.csproj
+    - name: Restore dependencies Domain
+      run: dotnet restore Microservices/MicroB/Core/Domain/Domain.csproj
+    - name: Restore dependencies Trasversales.Domain
+      run: dotnet restore Microservices/Trasversales/Core/Trasnversal.Domain/Trasnversal.Domain.csproj      
+    - name: Build WebApi
+      run: dotnet build Microservices/MicroB/Api/WebApi/WebApi.csproj
+    - name: Build Domain
+      run: dotnet build Microservices/MicroB/Core/Domain/Domain.csproj
+    - name: Build Trasversales.Domain
+      run: dotnet build Microservices/Trasversales/Core/Trasnversal.Domain/Trasnversal.Domain.csproj 
+    - name: Test Domain
+      run: dotnet build Microservices/MicroB/Core/Domain/Domain.csproj --no-build --verbosity normal
+    - name: Test Trasversales.Domain
+      run: dotnet build Microservices/Trasversales/Core/Trasnversal.Domain/Trasnversal.Domain.csproj --no-build --verbosity normal
